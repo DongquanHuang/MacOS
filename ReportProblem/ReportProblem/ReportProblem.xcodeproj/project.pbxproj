@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D002554B1BBA591E00768B2E /* ReportProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03F3E8D1BBA45AF00BD83CB /* ReportProblem.storyboard */; };
+		D002554E1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */; };
+		D002554F1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */; };
+		D03F3E861BBA459E00BD83CB /* NSWorkspace+MailExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7B1BBA459E00BD83CB /* NSWorkspace+MailExtension.m */; };
+		D03F3E871BBA459E00BD83CB /* ReportMail.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7D1BBA459E00BD83CB /* ReportMail.m */; };
+		D03F3E881BBA459E00BD83CB /* SendViaMail.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D03F3E7E1BBA459E00BD83CB /* SendViaMail.scpt */; };
+		D03F3E891BBA459E00BD83CB /* SendViaOutlook.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D03F3E7F1BBA459E00BD83CB /* SendViaOutlook.scpt */; };
+		D03F3E8A1BBA459E00BD83CB /* ReportProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E811BBA459E00BD83CB /* ReportProblemViewController.m */; };
+		D03F3E8B1BBA459E00BD83CB /* WbxLogCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E831BBA459E00BD83CB /* WbxLogCollector.m */; };
+		D03F3E8C1BBA459E00BD83CB /* ZipShellCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */; };
+		D03F3E9D1BBA488500BD83CB /* ReportProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E811BBA459E00BD83CB /* ReportProblemViewController.m */; };
+		D03F3E9E1BBA488900BD83CB /* NSWorkspace+MailExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7B1BBA459E00BD83CB /* NSWorkspace+MailExtension.m */; };
+		D03F3E9F1BBA488B00BD83CB /* ReportMail.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7D1BBA459E00BD83CB /* ReportMail.m */; };
+		D03F3EA01BBA488D00BD83CB /* WbxLogCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E831BBA459E00BD83CB /* WbxLogCollector.m */; };
+		D03F3EA11BBA489000BD83CB /* ZipShellCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */; };
+		D03F3EA41BBA48BE00BD83CB /* WbxLogCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */; };
+		D03F3EA51BBA48BE00BD83CB /* ZipShellCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D002554C1BBA620D00768B2E /* ReportProblemWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportProblemWindowController.h; sourceTree = "<group>"; };
+		D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportProblemWindowController.m; sourceTree = "<group>"; };
+		D03F3E5D1BBA44CA00BD83CB /* ReportProblem.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReportProblem.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F3E611BBA44CA00BD83CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03F3E7A1BBA459E00BD83CB /* NSWorkspace+MailExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+MailExtension.h"; sourceTree = "<group>"; };
+		D03F3E7B1BBA459E00BD83CB /* NSWorkspace+MailExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace+MailExtension.m"; sourceTree = "<group>"; };
+		D03F3E7C1BBA459E00BD83CB /* ReportMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportMail.h; sourceTree = "<group>"; };
+		D03F3E7D1BBA459E00BD83CB /* ReportMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportMail.m; sourceTree = "<group>"; };
+		D03F3E7E1BBA459E00BD83CB /* SendViaMail.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = SendViaMail.scpt; sourceTree = "<group>"; };
+		D03F3E7F1BBA459E00BD83CB /* SendViaOutlook.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = SendViaOutlook.scpt; sourceTree = "<group>"; };
+		D03F3E801BBA459E00BD83CB /* ReportProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportProblemViewController.h; sourceTree = "<group>"; };
+		D03F3E811BBA459E00BD83CB /* ReportProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportProblemViewController.m; sourceTree = "<group>"; };
+		D03F3E821BBA459E00BD83CB /* WbxLogCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WbxLogCollector.h; sourceTree = "<group>"; };
+		D03F3E831BBA459E00BD83CB /* WbxLogCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbxLogCollector.m; sourceTree = "<group>"; };
+		D03F3E841BBA459E00BD83CB /* ZipShellCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipShellCommand.h; sourceTree = "<group>"; };
+		D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipShellCommand.m; sourceTree = "<group>"; };
+		D03F3E8E1BBA45AF00BD83CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ReportProblem.storyboard; sourceTree = "<group>"; };
+		D03F3E941BBA487E00BD83CB /* ReportProblemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReportProblemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F3E971BBA487E00BD83CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbxLogCollectorTests.m; sourceTree = "<group>"; };
+		D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipShellCommandTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D03F3E5A1BBA44CA00BD83CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F3E911BBA487E00BD83CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D03F3E541BBA44CA00BD83CB = {
+			isa = PBXGroup;
+			children = (
+				D03F3E5F1BBA44CA00BD83CB /* ReportProblem */,
+				D03F3E951BBA487E00BD83CB /* ReportProblemTests */,
+				D03F3E5E1BBA44CA00BD83CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D03F3E5E1BBA44CA00BD83CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D03F3E5D1BBA44CA00BD83CB /* ReportProblem.bundle */,
+				D03F3E941BBA487E00BD83CB /* ReportProblemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D03F3E5F1BBA44CA00BD83CB /* ReportProblem */ = {
+			isa = PBXGroup;
+			children = (
+				D002554C1BBA620D00768B2E /* ReportProblemWindowController.h */,
+				D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */,
+				D03F3E801BBA459E00BD83CB /* ReportProblemViewController.h */,
+				D03F3E811BBA459E00BD83CB /* ReportProblemViewController.m */,
+				D03F3E7A1BBA459E00BD83CB /* NSWorkspace+MailExtension.h */,
+				D03F3E7B1BBA459E00BD83CB /* NSWorkspace+MailExtension.m */,
+				D03F3E7C1BBA459E00BD83CB /* ReportMail.h */,
+				D03F3E7D1BBA459E00BD83CB /* ReportMail.m */,
+				D03F3E821BBA459E00BD83CB /* WbxLogCollector.h */,
+				D03F3E831BBA459E00BD83CB /* WbxLogCollector.m */,
+				D03F3E841BBA459E00BD83CB /* ZipShellCommand.h */,
+				D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */,
+				D03F3E601BBA44CA00BD83CB /* Supporting Files */,
+			);
+			path = ReportProblem;
+			sourceTree = "<group>";
+		};
+		D03F3E601BBA44CA00BD83CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D03F3E7E1BBA459E00BD83CB /* SendViaMail.scpt */,
+				D03F3E7F1BBA459E00BD83CB /* SendViaOutlook.scpt */,
+				D03F3E611BBA44CA00BD83CB /* Info.plist */,
+				D03F3E8D1BBA45AF00BD83CB /* ReportProblem.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D03F3E951BBA487E00BD83CB /* ReportProblemTests */ = {
+			isa = PBXGroup;
+			children = (
+				D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */,
+				D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */,
+				D03F3E961BBA487E00BD83CB /* Supporting Files */,
+			);
+			path = ReportProblemTests;
+			sourceTree = "<group>";
+		};
+		D03F3E961BBA487E00BD83CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D03F3E971BBA487E00BD83CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D03F3E5C1BBA44CA00BD83CB /* ReportProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03F3E641BBA44CA00BD83CB /* Build configuration list for PBXNativeTarget "ReportProblem" */;
+			buildPhases = (
+				D03F3E591BBA44CA00BD83CB /* Sources */,
+				D03F3E5A1BBA44CA00BD83CB /* Frameworks */,
+				D03F3E5B1BBA44CA00BD83CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportProblem;
+			productName = ReportProblem;
+			productReference = D03F3E5D1BBA44CA00BD83CB /* ReportProblem.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D03F3E931BBA487E00BD83CB /* ReportProblemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03F3E9A1BBA487E00BD83CB /* Build configuration list for PBXNativeTarget "ReportProblemTests" */;
+			buildPhases = (
+				D03F3E901BBA487E00BD83CB /* Sources */,
+				D03F3E911BBA487E00BD83CB /* Frameworks */,
+				D03F3E921BBA487E00BD83CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportProblemTests;
+			productName = ReportProblemTests;
+			productReference = D03F3E941BBA487E00BD83CB /* ReportProblemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D03F3E551BBA44CA00BD83CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = HDQ;
+				TargetAttributes = {
+					D03F3E5C1BBA44CA00BD83CB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D03F3E931BBA487E00BD83CB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D03F3E581BBA44CA00BD83CB /* Build configuration list for PBXProject "ReportProblem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D03F3E541BBA44CA00BD83CB;
+			productRefGroup = D03F3E5E1BBA44CA00BD83CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D03F3E5C1BBA44CA00BD83CB /* ReportProblem */,
+				D03F3E931BBA487E00BD83CB /* ReportProblemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D03F3E5B1BBA44CA00BD83CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D002554B1BBA591E00768B2E /* ReportProblem.storyboard in Resources */,
+				D03F3E891BBA459E00BD83CB /* SendViaOutlook.scpt in Resources */,
+				D03F3E881BBA459E00BD83CB /* SendViaMail.scpt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F3E921BBA487E00BD83CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D03F3E591BBA44CA00BD83CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F3E8A1BBA459E00BD83CB /* ReportProblemViewController.m in Sources */,
+				D03F3E871BBA459E00BD83CB /* ReportMail.m in Sources */,
+				D03F3E8C1BBA459E00BD83CB /* ZipShellCommand.m in Sources */,
+				D03F3E8B1BBA459E00BD83CB /* WbxLogCollector.m in Sources */,
+				D03F3E861BBA459E00BD83CB /* NSWorkspace+MailExtension.m in Sources */,
+				D002554E1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F3E901BBA487E00BD83CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F3EA01BBA488D00BD83CB /* WbxLogCollector.m in Sources */,
+				D03F3E9D1BBA488500BD83CB /* ReportProblemViewController.m in Sources */,
+				D03F3EA41BBA48BE00BD83CB /* WbxLogCollectorTests.m in Sources */,
+				D002554F1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */,
+				D03F3EA51BBA48BE00BD83CB /* ZipShellCommandTests.m in Sources */,
+				D03F3EA11BBA489000BD83CB /* ZipShellCommand.m in Sources */,
+				D03F3E9F1BBA488B00BD83CB /* ReportMail.m in Sources */,
+				D03F3E9E1BBA488900BD83CB /* NSWorkspace+MailExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D03F3E8D1BBA45AF00BD83CB /* ReportProblem.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D03F3E8E1BBA45AF00BD83CB /* Base */,
+			);
+			name = ReportProblem.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D03F3E621BBA44CA00BD83CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D03F3E631BBA44CA00BD83CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D03F3E651BBA44CA00BD83CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReportProblem/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D03F3E661BBA44CA00BD83CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReportProblem/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D03F3E9B1BBA487E00BD83CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReportProblemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D03F3E9C1BBA487E00BD83CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReportProblemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D03F3E581BBA44CA00BD83CB /* Build configuration list for PBXProject "ReportProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03F3E621BBA44CA00BD83CB /* Debug */,
+				D03F3E631BBA44CA00BD83CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D03F3E641BBA44CA00BD83CB /* Build configuration list for PBXNativeTarget "ReportProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03F3E651BBA44CA00BD83CB /* Debug */,
+				D03F3E661BBA44CA00BD83CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D03F3E9A1BBA487E00BD83CB /* Build configuration list for PBXNativeTarget "ReportProblemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03F3E9B1BBA487E00BD83CB /* Debug */,
+				D03F3E9C1BBA487E00BD83CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D03F3E551BBA44CA00BD83CB /* Project object */;
+}
