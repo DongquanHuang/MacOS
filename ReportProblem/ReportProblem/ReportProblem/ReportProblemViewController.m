@@ -58,9 +58,13 @@
 }
 
 - (IBAction)reportProblem:(NSButton *)sender {
-    NSArray *meetingLogs = [self collectMeetingLogs];
-    NSArray *gpcLogs = [self collectGpcLogs];
-    NSArray *allLogs = [meetingLogs arrayByAddingObjectsFromArray:gpcLogs];
+//    NSArray *meetingLogs = [self collectGpcLogs];
+//    NSArray *gpcLogs = [self collectGpcLogs];
+//    NSArray *allLogs = [meetingLogs arrayByAddingObjectsFromArray:gpcLogs];
+    
+    NSArray *allLogs = [NSArray arrayWithObjects:[self latestMeetingLog],
+                        [self latestGpcLog],
+                        nil];
     
     self.reportMail.recipient = @"petehuan@cisco.com";
     self.reportMail.mailTitle = @"Report problem: mail title";
@@ -80,6 +84,14 @@
 
 - (NSArray *)collectGpcLogs {
     return [self.logCollector findAllGpcLogs];
+}
+
+- (NSString *)latestMeetingLog {
+    return [self.logCollector latestMeetingLogPath];
+}
+
+- (NSString *)latestGpcLog {
+    return [self.logCollector latestGpcLogPath];
 }
 
 
