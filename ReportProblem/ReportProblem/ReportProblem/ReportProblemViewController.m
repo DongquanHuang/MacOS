@@ -10,12 +10,14 @@
 #import "NSWorkspace+MailExtension.h"
 #import "WbxLogCollector.h"
 #import "ReportMail.h"
+#import "WbxClientVersionKeeper.h"
 
 @interface ReportProblemViewController ()
 
 @property (strong, nonatomic) WbxLogCollector *logCollector;
 @property (strong, nonatomic) ReportMail *reportMail;
 @property (strong, nonatomic) NSWorkspace *ws;
+@property (strong, nonatomic) WbxClientVersionKeeper *versionKeeper;
 
 @end
 
@@ -51,6 +53,14 @@
     return _ws;
 }
 
+- (WbxClientVersionKeeper *)versionKeeper {
+    if (!_versionKeeper) {
+        _versionKeeper = [[WbxClientVersionKeeper alloc] sharedInstance];
+    }
+    
+    return _versionKeeper;
+}
+
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
@@ -66,8 +76,10 @@
                         [self latestGpcLog],
                         nil];
     
+    
+    
     self.reportMail.recipient = @"petehuan@cisco.com";
-    self.reportMail.mailTitle = @"Report problem: mail title";
+    self.reportMail.mailTitle = [[NSString alloc] initWithFormat:@"Report problem: WebEx client version %@", self.versionKeeper.clientVersion];
     self.reportMail.mailBody = @"Report problem: mail body";
     self.reportMail.attachments = [[NSArray alloc] initWithArray:allLogs];
     

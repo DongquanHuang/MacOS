@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+typedef void (*SetClientVersionPtr)(NSString *);
+
+@interface ViewController () {
+    SetClientVersionPtr setClientVersion;
+}
 
 @property (strong, nonatomic) NSWindowController *reportProblemWindowController;
 
@@ -36,6 +40,8 @@
     bundle = [NSBundle bundleWithPath:reportProblemBundlePath];
     [bundle load];
     
+    [self setClientVersionForBundle:reportProblemBundlePath];
+    
     NSStoryboard *sb = [NSStoryboard storyboardWithName:[self storyboardNameForReportProblemBundle] bundle:bundle];
     self.reportProblemWindowController = [sb instantiateInitialController];
     [self.reportProblemWindowController showWindow:self];
@@ -47,6 +53,14 @@
 
 - (NSString *)storyboardNameForReportProblemBundle {
     return @"ReportProblem";
+}
+
+- (void)setClientVersionForBundle:(NSString *)bundlePath {
+    NSURL *cfBundleURL = [NSURL fileURLWithPath:bundlePath];
+    CFBundleRef cfBundle = CFBundleCreate(kCFAllocatorDefault, (CFURLRef)cfBundleURL);
+    
+    setClientVersion = CFBundleGetFunctionPointerForName(cfBundle, CFSTR("SetWbxClientVersion"));
+    setClientVersion(@"1.0.0");
 }
 
 @end

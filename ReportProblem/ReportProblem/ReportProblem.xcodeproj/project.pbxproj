@@ -24,6 +24,11 @@
 		D03F3EA11BBA489000BD83CB /* ZipShellCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */; };
 		D03F3EA41BBA48BE00BD83CB /* WbxLogCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */; };
 		D03F3EA51BBA48BE00BD83CB /* ZipShellCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */; };
+		D066333E1BBB73E300FEF875 /* WbxClientVersionKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = D066333D1BBB73E300FEF875 /* WbxClientVersionKeeper.m */; };
+		D066333F1BBB73E300FEF875 /* WbxClientVersionKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = D066333D1BBB73E300FEF875 /* WbxClientVersionKeeper.m */; };
+		D06633411BBB7A3400FEF875 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = D06633401BBB7A3400FEF875 /* Interface.m */; };
+		D06633421BBB7A3400FEF875 /* Interface.m in Sources */ = {isa = PBXBuildFile; fileRef = D06633401BBB7A3400FEF875 /* Interface.m */; };
+		D06633471BBB7BD100FEF875 /* InterfaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D06633461BBB7BD100FEF875 /* InterfaceTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,11 @@
 		D03F3E971BBA487E00BD83CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbxLogCollectorTests.m; sourceTree = "<group>"; };
 		D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipShellCommandTests.m; sourceTree = "<group>"; };
+		D066333C1BBB73E300FEF875 /* WbxClientVersionKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WbxClientVersionKeeper.h; sourceTree = "<group>"; };
+		D066333D1BBB73E300FEF875 /* WbxClientVersionKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbxClientVersionKeeper.m; sourceTree = "<group>"; };
+		D06633401BBB7A3400FEF875 /* Interface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interface.m; sourceTree = "<group>"; };
+		D06633451BBB7BA700FEF875 /* Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+		D06633461BBB7BD100FEF875 /* InterfaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,10 @@
 				D03F3E831BBA459E00BD83CB /* WbxLogCollector.m */,
 				D03F3E841BBA459E00BD83CB /* ZipShellCommand.h */,
 				D03F3E851BBA459E00BD83CB /* ZipShellCommand.m */,
+				D06633451BBB7BA700FEF875 /* Interface.h */,
+				D06633401BBB7A3400FEF875 /* Interface.m */,
+				D066333C1BBB73E300FEF875 /* WbxClientVersionKeeper.h */,
+				D066333D1BBB73E300FEF875 /* WbxClientVersionKeeper.m */,
 				D03F3E601BBA44CA00BD83CB /* Supporting Files */,
 			);
 			path = ReportProblem;
@@ -122,6 +136,7 @@
 			children = (
 				D03F3EA21BBA48BE00BD83CB /* WbxLogCollectorTests.m */,
 				D03F3EA31BBA48BE00BD83CB /* ZipShellCommandTests.m */,
+				D06633461BBB7BD100FEF875 /* InterfaceTests.m */,
 				D03F3E961BBA487E00BD83CB /* Supporting Files */,
 			);
 			path = ReportProblemTests;
@@ -236,9 +251,11 @@
 				D03F3E8A1BBA459E00BD83CB /* ReportProblemViewController.m in Sources */,
 				D03F3E871BBA459E00BD83CB /* ReportMail.m in Sources */,
 				D03F3E8C1BBA459E00BD83CB /* ZipShellCommand.m in Sources */,
+				D066333E1BBB73E300FEF875 /* WbxClientVersionKeeper.m in Sources */,
 				D03F3E8B1BBA459E00BD83CB /* WbxLogCollector.m in Sources */,
 				D03F3E861BBA459E00BD83CB /* NSWorkspace+MailExtension.m in Sources */,
 				D002554E1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */,
+				D06633411BBB7A3400FEF875 /* Interface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F3EA01BBA488D00BD83CB /* WbxLogCollector.m in Sources */,
+				D066333F1BBB73E300FEF875 /* WbxClientVersionKeeper.m in Sources */,
 				D03F3E9D1BBA488500BD83CB /* ReportProblemViewController.m in Sources */,
+				D06633471BBB7BD100FEF875 /* InterfaceTests.m in Sources */,
 				D03F3EA41BBA48BE00BD83CB /* WbxLogCollectorTests.m in Sources */,
 				D002554F1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */,
+				D06633421BBB7A3400FEF875 /* Interface.m in Sources */,
 				D03F3EA51BBA48BE00BD83CB /* ZipShellCommandTests.m in Sources */,
 				D03F3EA11BBA489000BD83CB /* ZipShellCommand.m in Sources */,
 				D03F3E9F1BBA488B00BD83CB /* ReportMail.m in Sources */,
