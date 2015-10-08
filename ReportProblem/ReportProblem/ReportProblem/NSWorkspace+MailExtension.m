@@ -68,12 +68,10 @@ NSString *AppleScriptExtension = @"scpt" ;
         CFStringRef path = CFURLCopyFileSystemPath(mailAppURL, kCFURLPOSIXPathStyle);
         [defaultMailApp setString:(NSString *)CFBridgingRelease(path)];
         
-        //CFRelease(path);
         CFRelease(mailAppURL);
     }
     CFRelease(mailURL);
     
-    NSLog(@"Default mail app: %@", defaultMailApp);
     return defaultMailApp;
 }
 
