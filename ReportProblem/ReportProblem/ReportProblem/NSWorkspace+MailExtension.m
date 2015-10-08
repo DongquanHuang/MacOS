@@ -13,7 +13,7 @@
 NSString *zipFolder = @"/tmp";
 NSString *zipFileName = @"Log";
 
-NSString *MSOutlookBundleIdentifier = @"com.microsoft.Outlook";
+//NSString *MSOutlookBundleIdentifier = @"com.microsoft.Outlook";
 NSString *OutlookAppleScriptName = @"SendViaOutlook" ;
 NSString *MailAppleScriptName =	@"SendViaMail" ;
 
@@ -27,7 +27,7 @@ NSString *AppleScriptExtension = @"scpt" ;
     NSString *zippedAttachment = [self zipAttachmentFiles:reportMail.attachments];
     
     NSString *scriptName = MailAppleScriptName;
-    if ([self isMSOutlookInstalled]) {
+    if ([self defaultMailAppIsOutlook]) {
         scriptName = OutlookAppleScriptName;
     }
     [self mailTo:reportMail.recipient withMailTitle:reportMail.mailTitle mailBody:reportMail.mailBody andAttachment:zippedAttachment byUsingAppleScript:scriptName];
@@ -49,10 +49,40 @@ NSString *AppleScriptExtension = @"scpt" ;
     return @"";
 }
 
+#if 0
 -(BOOL)isMSOutlookInstalled
 {
     NSString *strPath = [self absolutePathForAppBundleWithIdentifier:MSOutlookBundleIdentifier];
     return strPath.length > 0;
+}
+#endif
+
+- (NSString *)getDefaultMailApp {
+    NSMutableString *defaultMailApp = [[NSMutableString alloc] init];
+    
+    CFURLRef mailURL = CFURLCreateWithString(kCFAllocatorDefault, CFSTR("mailto://"), NULL);
+    CFURLRef mailAppURL = NULL;
+    OSStatus ret = 0;
+    if((ret = LSGetApplicationForURL(mailURL, kLSRolesAll, NULL, &mailAppURL)) == 0)
+    {
+        CFStringRef path = CFURLCopyFileSystemPath(mailAppURL, kCFURLPOSIXPathStyle);
+        [defaultMailApp setString:(NSString *)CFBridgingRelease(path)];
+        
+        //CFRelease(path);
+        CFRelease(mailAppURL);
+    }
+    CFRelease(mailURL);
+    
+    NSLog(@"Default mail app: %@", defaultMailApp);
+    return defaultMailApp;
+}
+
+- (BOOL)defaultMailAppIsOutlook {
+    NSString *defaultMailApp = [self getDefaultMailApp];
+    if ([defaultMailApp rangeOfString:@"Outlook.app"].location != NSNotFound) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)mailTo:(NSString *)address withMailTitle:(NSString *)title mailBody:(NSString *)body andAttachment:(NSString *)attachment byUsingAppleScript:(NSString *)scriptName {
