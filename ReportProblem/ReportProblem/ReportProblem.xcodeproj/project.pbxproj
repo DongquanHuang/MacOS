@@ -10,6 +10,8 @@
 		D002554B1BBA591E00768B2E /* ReportProblem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03F3E8D1BBA45AF00BD83CB /* ReportProblem.storyboard */; };
 		D002554E1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */; };
 		D002554F1BBA620D00768B2E /* ReportProblemWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */; };
+		D0358E3C1BCB63C7001991FA /* ReportProblem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0358E3B1BCB63C7001991FA /* ReportProblem.xib */; };
+		D0358E3D1BCB63C7001991FA /* ReportProblem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0358E3B1BCB63C7001991FA /* ReportProblem.xib */; };
 		D03F3E861BBA459E00BD83CB /* NSWorkspace+MailExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7B1BBA459E00BD83CB /* NSWorkspace+MailExtension.m */; };
 		D03F3E871BBA459E00BD83CB /* ReportMail.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F3E7D1BBA459E00BD83CB /* ReportMail.m */; };
 		D03F3E881BBA459E00BD83CB /* SendViaMail.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D03F3E7E1BBA459E00BD83CB /* SendViaMail.scpt */; };
@@ -34,6 +36,7 @@
 /* Begin PBXFileReference section */
 		D002554C1BBA620D00768B2E /* ReportProblemWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportProblemWindowController.h; sourceTree = "<group>"; };
 		D002554D1BBA620D00768B2E /* ReportProblemWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportProblemWindowController.m; sourceTree = "<group>"; };
+		D0358E3B1BCB63C7001991FA /* ReportProblem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportProblem.xib; sourceTree = "<group>"; };
 		D03F3E5D1BBA44CA00BD83CB /* ReportProblem.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReportProblem.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03F3E611BBA44CA00BD83CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03F3E7A1BBA459E00BD83CB /* NSWorkspace+MailExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+MailExtension.h"; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 				D03F3E7F1BBA459E00BD83CB /* SendViaOutlook.scpt */,
 				D03F3E611BBA44CA00BD83CB /* Info.plist */,
 				D03F3E8D1BBA45AF00BD83CB /* ReportProblem.storyboard */,
+				D0358E3B1BCB63C7001991FA /* ReportProblem.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +235,7 @@
 				D002554B1BBA591E00768B2E /* ReportProblem.storyboard in Resources */,
 				D03F3E891BBA459E00BD83CB /* SendViaOutlook.scpt in Resources */,
 				D03F3E881BBA459E00BD83CB /* SendViaMail.scpt in Resources */,
+				D0358E3C1BCB63C7001991FA /* ReportProblem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0358E3D1BCB63C7001991FA /* ReportProblem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

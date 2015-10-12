@@ -10,5 +10,6 @@
 #define ReportProblem_Interface_h
 
 void SetWbxClientVersion(NSString *clientVersion);
+void ShowReportProblemDialog();
 
 #endif

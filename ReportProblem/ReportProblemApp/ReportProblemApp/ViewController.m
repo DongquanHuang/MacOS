@@ -9,9 +9,11 @@
 #import "ViewController.h"
 
 typedef void (*SetClientVersionPtr)(NSString *);
+typedef void (*ShowReportProblemDialogPtr)();
 
 @interface ViewController () {
     SetClientVersionPtr setClientVersion;
+    ShowReportProblemDialogPtr showReportProblemDialog;
 }
 
 @property (strong, nonatomic) NSWindowController *reportProblemWindowController;
@@ -40,11 +42,12 @@ typedef void (*SetClientVersionPtr)(NSString *);
     bundle = [NSBundle bundleWithPath:reportProblemBundlePath];
     [bundle load];
     
-    [self setClientVersionForBundle:reportProblemBundlePath];
+    [self setClientVersion];
+    [self showReportDialog];
     
-    NSStoryboard *sb = [NSStoryboard storyboardWithName:[self storyboardNameForReportProblemBundle] bundle:bundle];
-    self.reportProblemWindowController = [sb instantiateInitialController];
-    [self.reportProblemWindowController showWindow:self];
+//    NSStoryboard *sb = [NSStoryboard storyboardWithName:[self storyboardNameForReportProblemBundle] bundle:bundle];
+//    self.reportProblemWindowController = [sb instantiateInitialController];
+//    [self.reportProblemWindowController showWindow:self];
 }
 
 - (NSString *)reportProblemBundleNameString {
@@ -55,12 +58,25 @@ typedef void (*SetClientVersionPtr)(NSString *);
     return @"ReportProblem";
 }
 
-- (void)setClientVersionForBundle:(NSString *)bundlePath {
+- (NSString *)reportProblemBundlePath {
+    return [[NSBundle mainBundle] pathForResource:[self reportProblemBundleNameString] ofType:@"bundle"];
+}
+
+- (void *)getFunctionPointerWithName:(NSString *)functionName fromBundle:(NSString *)bundlePath {
     NSURL *cfBundleURL = [NSURL fileURLWithPath:bundlePath];
     CFBundleRef cfBundle = CFBundleCreate(kCFAllocatorDefault, (CFURLRef)cfBundleURL);
     
-    setClientVersion = CFBundleGetFunctionPointerForName(cfBundle, CFSTR("SetWbxClientVersion"));
+    return CFBundleGetFunctionPointerForName(cfBundle, (__bridge CFStringRef)functionName);
+}
+
+- (void)setClientVersion {
+    setClientVersion = [self getFunctionPointerWithName:@"SetWbxClientVersion" fromBundle:[self reportProblemBundlePath]];
     setClientVersion(@"1.0.0");
+}
+
+- (void)showReportDialog {
+    showReportProblemDialog = [self getFunctionPointerWithName:@"ShowReportProblemDialog" fromBundle:[self reportProblemBundlePath]];
+    showReportProblemDialog();
 }
 
 @end

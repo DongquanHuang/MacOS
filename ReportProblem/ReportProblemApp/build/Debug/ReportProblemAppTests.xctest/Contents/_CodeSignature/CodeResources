@@ -10,8 +10,17 @@
 		</data>
 		<key>Resources/ReportProblem.bundle/Contents/MacOS/ReportProblem</key>
 		<data>
-		WE/GS7vJSUANW87G8z4QWp/bvq8=
+		DNXtt7St4W0gxFTwokKBJR25dlM=
 		</data>
+		<key>Resources/ReportProblem.bundle/Contents/Resources/Base.lproj/ReportProblem.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EIfgYVb/G+B6ya8kWTOOZ8xWmtg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ReportProblem.bundle/Contents/Resources/Base.lproj/ReportProblem.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -25,7 +34,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Om4ZebtdhpUtuHad8gtJCjiTc+0=
+			h8bcKkuN42BuFKV1VqNAuJUCvzk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -34,11 +43,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7NpIzxVlgsz1h5sQ9KPO/k2xx6c=
+			NcmROiSPkuDR0CRpSxaNh2alqnU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ReportProblem.bundle/Contents/Resources/ReportProblem.nib</key>
+		<data>
+		HL8XCJQ2mV371vw532W7NSB2U5A=
+		</data>
 		<key>Resources/ReportProblem.bundle/Contents/Resources/SendViaMail.scpt</key>
 		<data>
 		aPy4QteKqRQFmR6D/QNNxoB/Lww=
@@ -56,8 +69,17 @@
 		</data>
 		<key>Resources/ReportProblem.bundle/Contents/MacOS/ReportProblem</key>
 		<data>
-		WE/GS7vJSUANW87G8z4QWp/bvq8=
+		DNXtt7St4W0gxFTwokKBJR25dlM=
 		</data>
+		<key>Resources/ReportProblem.bundle/Contents/Resources/Base.lproj/ReportProblem.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EIfgYVb/G+B6ya8kWTOOZ8xWmtg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/ReportProblem.bundle/Contents/Resources/Base.lproj/ReportProblem.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -71,7 +93,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Om4ZebtdhpUtuHad8gtJCjiTc+0=
+			h8bcKkuN42BuFKV1VqNAuJUCvzk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,11 +102,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7NpIzxVlgsz1h5sQ9KPO/k2xx6c=
+			NcmROiSPkuDR0CRpSxaNh2alqnU=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/ReportProblem.bundle/Contents/Resources/ReportProblem.nib</key>
+		<data>
+		HL8XCJQ2mV371vw532W7NSB2U5A=
+		</data>
 		<key>Resources/ReportProblem.bundle/Contents/Resources/SendViaMail.scpt</key>
 		<data>
 		aPy4QteKqRQFmR6D/QNNxoB/Lww=
